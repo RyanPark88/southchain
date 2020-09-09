@@ -3,11 +3,9 @@
     "name": "bootstrap-southchain",
     "version": "1.0.0",
     "scripts": {
-        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
-        "build:assets": "node scripts/build-assets.js",
+        "build": "npm run clean && npm run build:scripts && npm run build:assets",
         "build:scripts": "node scripts/build-scripts.js",
-        "start": "npm run build && node scripts/start.js",
-        "start:debug": "npm run build && node scripts/start-debug.js"
+        "start": "npm run build && node scripts/scripts.js",
     },
     "description": "HTML theme for southchain.",
     "keywords": [
@@ -40,8 +38,6 @@
         "concurrently": "5.2.0",
         "postcss": "7.0.32",
         "prettier": "2.0.5",
-        "pug": "3.0.0",
-        "sass": "1.26.8",
         "shelljs": "0.8.4",
         "upath": "1.2.0"
     }
