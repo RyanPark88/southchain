@@ -1,0 +1,48 @@
+{
+    "title": "southchain",
+    "name": "bootstrap-southchain",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
+        "build:assets": "node scripts/build-assets.js",
+        "build:scripts": "node scripts/build-scripts.js",
+        "start": "npm run build && node scripts/start.js",
+        "start:debug": "npm run build && node scripts/start-debug.js"
+    },
+    "description": "HTML theme for southchain.",
+    "keywords": [
+        "css",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://startbootstrap.com/themes/freelancer",
+    "bugs": {
+        "email": "feedback@southchain.digital"
+    },
+    "license": "MIT",
+    "author": "Start Bootstrap",
+    "contributors": [
+        "David Miller (http://davidmiller.io/)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/RyanPark88/southchain"
+    },
+    "dependencies": {
+        "bootstrap": "4.5.0"
+    },
+    "devDependencies": {
+        "autoprefixer": "9.8.0",
+        "browser-sync": "2.26.7",
+        "chokidar": "3.4.0",
+        "concurrently": "5.2.0",
+        "postcss": "7.0.32",
+        "prettier": "2.0.5",
+        "pug": "3.0.0",
+        "sass": "1.26.8",
+        "shelljs": "0.8.4",
+        "upath": "1.2.0"
+    }
+}
