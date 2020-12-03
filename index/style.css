@@ -71,8 +71,7 @@ header {
   text-align: center;
   background: black;
   color: white;
-  animation-duration: 4s;
-  animation-name: bounceIn;
+  
 }
 header .container {
   padding-top: 100px;
@@ -91,6 +90,8 @@ header .intro-text .name {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2em;
+  animation-duration: 4s;
+  animation-name: bounceIn;  
 }
 header .intro-text .skills {
   font-size: 1.25em;
