@@ -77,9 +77,9 @@ header .container {
   padding-bottom: 50px;
 }
 header img {
-  display: block;
-  margin: 0 auto 30px;
-  animation: rotation 25s infinite linear;
+  display: relative;
+  animation-duration: 4s;
+  animation-name: bounceIn;
   width: 20%;
   height: 20%;
 }
@@ -147,7 +147,7 @@ header .intro-text .skills {
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
-  background: #18BC9C;
+  background: black;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -157,9 +157,9 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #18BC9C;
+  background-color: black;
   color: white;
-  border-color: #18BC9C;
+  border-color: white;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -509,11 +509,16 @@ fieldset[disabled] .btn-success.active {
   opacity: 0;
   display: none;
 }
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
   }
 }
