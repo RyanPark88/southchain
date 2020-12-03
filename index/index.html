@@ -21,9 +21,9 @@
     <link href="style.css" rel="stylesheet" />
 
     <!-- Custom Fonts -->
-    <link href="font-awesome.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet" type="text/css"> 
+  
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
       rel="stylesheet"
       type="text/css"
     />
@@ -86,7 +86,10 @@
               <a href="about.html">About Us</a>
             </li>
             <li class="page-scroll">
-              <a href="https://docs.southchain.digital">Visit our Docs page</a>
+              <a href="https://docs.southchain.digital">Docs</a>
+            </li>
+             <li class="page-scroll">
+              <a href="uniswap.html">Uniswap Interface</a>
             </li>
           </ul>
         </div>
@@ -243,7 +246,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://github.com/South-Chain"
+                    href="https://github.com/southchain"
                     class="btn-social btn-outline"
                     ><i class="fa fa-fw fa-github"></i
                   ></a>
@@ -273,12 +276,14 @@
     </footer>
 
     <!-- jQuery -->
-    <script
-      src="https://code.jquery.com/jquery-2.2.1.min.js"
-      integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
-      crossorigin="anonymous"
-    ></script>
-
+   <script>
+(function(w,d,s,g,js,fs){
+  g=w.gapi||(w.gapi={});g.analytics={q:[],ready:function(f){this.q.push(f);}};
+  js=d.createElement(s);fs=d.getElementsByTagName(s)[0];
+  js.src='https://apis.google.com/js/platform.js';
+  fs.parentNode.insertBefore(js,fs);js.onload=function(){g.load('analytics');};
+}(window,document,'script'));
+</script>
     <!-- Bootstrap Core JavaScript -->
     <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
@@ -296,10 +301,3 @@
     <script src="https://use.fontawesome.com/fcb170d64e.js"></script>
   </body>
 </html>
-
-
-  
-
-
-
-   
