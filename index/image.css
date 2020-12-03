@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
 }
 p {
-  font-size: 20px;
+  font-size: 22px;
 }
 p.small {
   font-size: 16px;
@@ -18,7 +18,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #18BC9C;
+  color: indigo;
   outline: none;
 }
 h1,
@@ -52,6 +52,8 @@ hr.star-primary:after {
 }
 hr.star-light {
   border-color: white;
+  letter-spacing: .3rem;
+
 }
 hr.star-light:after {
   background-color: #18BC9C;
